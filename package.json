@@ -1,5 +1,5 @@
 {
-  "name": "@shaxpir/sharedb-storage-expo-sqlite",
+  "name": "@sharesync/sharedb-storage-expo-sqlite",
   "version": "3.0.8",
   "description": "Expo SQLite storage adapter for ShareDB with dual-database and connection pooling support",
   "main": "index.js",
@@ -16,26 +16,26 @@
     "collaborative",
     "operational-transform"
   ],
-  "author": "Benji Smith <benji@shaxpir.com>",
+  "author": "Benji Smith <benji@redthre.ad>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/shaxpir/sharedb-storage-expo-sqlite.git"
+    "url": "git://github.com/sharesync-dev/sharedb-storage-expo-sqlite.git"
   },
   "bugs": {
-    "url": "https://github.com/shaxpir/sharedb-storage-expo-sqlite/issues"
+    "url": "https://github.com/sharesync-dev/sharedb-storage-expo-sqlite/issues"
   },
-  "homepage": "https://github.com/shaxpir/sharedb-storage-expo-sqlite#readme",
+  "homepage": "https://github.com/sharesync-dev/sharedb-storage-expo-sqlite#readme",
   "engines": {
     "node": ">=14.0.0"
   },
   "peerDependencies": {
-    "@shaxpir/sharedb": ">=6.0.0",
+    "@sharesync/sharedb": ">=6.0.0",
     "expo-file-system": ">=17.0.0",
     "expo-sqlite": ">=14.0.0"
   },
   "dependencies": {
-    "@shaxpir/sharedb-storage-sqlite": "^2.0.11"
+    "@sharesync/sharedb-storage-sqlite": "^2.0.11"
   },
   "devDependencies": {
     "async": "^3.2.4",
@@ -70,5 +70,8 @@
       "text",
       "lcov"
     ]
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

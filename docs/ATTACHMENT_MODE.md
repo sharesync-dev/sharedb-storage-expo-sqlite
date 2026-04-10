@@ -27,7 +27,7 @@ This automatic process ensures indexes are properly created before attachment, a
 Base class that wraps any existing adapter and adds attachment functionality:
 
 ```javascript
-const AttachedSqliteAdapter = require('@shaxpir/sharedb-storage-expo-sqlite/lib/adapters/attached-sqlite-adapter');
+const AttachedSqliteAdapter = require('@sharesync/sharedb-storage-expo-sqlite/lib/adapters/attached-sqlite-adapter');
 ```
 
 ### AttachedExpoSqliteAdapter
@@ -35,7 +35,7 @@ const AttachedSqliteAdapter = require('@shaxpir/sharedb-storage-expo-sqlite/lib/
 React Native/Expo-specific implementation that handles attachment with expo-sqlite:
 
 ```javascript
-const AttachedExpoSqliteAdapter = require('@shaxpir/sharedb-storage-expo-sqlite/lib/adapters/attached-expo-sqlite-adapter');
+const AttachedExpoSqliteAdapter = require('@sharesync/sharedb-storage-expo-sqlite/lib/adapters/attached-expo-sqlite-adapter');
 
 // Create with explicit paths
 const adapter = new AttachedExpoSqliteAdapter(
@@ -70,7 +70,7 @@ const adapter = AttachedExpoSqliteAdapter.createWithDocumentDirectory(
 Schema strategy that works with attached databases by prefixing all table operations:
 
 ```javascript
-const AttachedCollectionPerTableStrategy = require('@shaxpir/sharedb-storage-expo-sqlite/lib/schema/attached-collection-per-table-strategy');
+const AttachedCollectionPerTableStrategy = require('@sharesync/sharedb-storage-expo-sqlite/lib/schema/attached-collection-per-table-strategy');
 
 const strategy = new AttachedCollectionPerTableStrategy({
   attachmentAlias: 'sharedb', // Must match the alias used in adapter
@@ -88,9 +88,9 @@ const strategy = new AttachedCollectionPerTableStrategy({
 ## Complete Example for React Native
 
 ```javascript
-const SqliteStorage = require('@shaxpir/sharedb-storage-expo-sqlite');
-const AttachedExpoSqliteAdapter = require('@shaxpir/sharedb-storage-expo-sqlite/lib/adapters/attached-expo-sqlite-adapter');
-const AttachedCollectionPerTableStrategy = require('@shaxpir/sharedb-storage-expo-sqlite/lib/schema/attached-collection-per-table-strategy');
+const SqliteStorage = require('@sharesync/sharedb-storage-expo-sqlite');
+const AttachedExpoSqliteAdapter = require('@sharesync/sharedb-storage-expo-sqlite/lib/adapters/attached-expo-sqlite-adapter');
+const AttachedCollectionPerTableStrategy = require('@sharesync/sharedb-storage-expo-sqlite/lib/schema/attached-collection-per-table-strategy');
 const FileSystem = require('expo-file-system');
 
 // Create adapter with attachment

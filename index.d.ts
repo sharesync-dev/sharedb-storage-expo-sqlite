@@ -1,5 +1,5 @@
-// Type definitions for @shaxpir/sharedb-storage-expo-sqlite
-// Project: https://github.com/shaxpir/sharedb-storage-expo-sqlite
+// Type definitions for @sharesync/sharedb-storage-expo-sqlite
+// Project: https://github.com/sharesync-dev/sharedb-storage-expo-sqlite
 // Definitions by: Claude Code <https://claude.ai/code>
 
 /// <reference types="node" />
@@ -10,7 +10,7 @@ import {
   DurableStorageRecord,
   DurableStorageRecords,
   DurableStorageCallback
-} from '@shaxpir/sharedb';
+} from '@sharesync/sharedb';
 
 // Re-export types from the base library
 import {
@@ -23,7 +23,7 @@ import {
   ProjectionColumnMapping,
   ProjectionIndexConfig,
   ArrayProjectionConfig
-} from '@shaxpir/sharedb-storage-sqlite';
+} from '@sharesync/sharedb-storage-sqlite';
 
 declare namespace ShareDBSQLiteStorage {
   // ===============================

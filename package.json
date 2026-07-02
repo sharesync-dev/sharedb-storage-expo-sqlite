@@ -1,6 +1,6 @@
 {
   "name": "@sharesync/sharedb-storage-expo-sqlite",
-  "version": "3.1.6",
+  "version": "3.1.7",
   "description": "Expo SQLite storage adapter for ShareDB with dual-database and connection pooling support",
   "main": "index.js",
   "types": "index.d.ts",
@@ -30,12 +30,12 @@
     "node": ">=14.0.0"
   },
   "peerDependencies": {
-    "@sharesync/sharedb": "^6.1.0",
+    "@sharesync/sharedb": "^6.2.0",
     "expo-file-system": ">=17.0.0",
     "expo-sqlite": ">=14.0.0"
   },
   "dependencies": {
-    "@sharesync/sharedb-storage-sqlite": "^2.1.0"
+    "@sharesync/sharedb-storage-sqlite": "^2.2.0"
   },
   "devDependencies": {
     "async": "^3.2.4",

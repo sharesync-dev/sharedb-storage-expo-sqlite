@@ -30,7 +30,7 @@
     "node": ">=14.0.0"
   },
   "peerDependencies": {
-    "@sharesync/sharedb": "^6.2.0",
+    "@sharesync/sharedb": "^6.3.0",
     "expo-file-system": ">=17.0.0",
     "expo-sqlite": ">=14.0.0"
   },

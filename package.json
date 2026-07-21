@@ -35,7 +35,7 @@
     "expo-sqlite": ">=14.0.0"
   },
   "dependencies": {
-    "@sharesync/sharedb-storage-sqlite": "^2.2.0"
+    "@sharesync/sharedb-storage-sqlite": "^2.3.0"
   },
   "devDependencies": {
     "async": "^3.2.4",
